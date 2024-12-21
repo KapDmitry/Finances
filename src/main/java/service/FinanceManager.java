@@ -327,7 +327,7 @@ public class FinanceManager {
 
     private void getExpensesByCategories() {
         if (currentUser == null) {
-            output.println("You need to log in first.");
+            System.out.println("You need to log in first.");
             return;
         }
 
@@ -335,7 +335,7 @@ public class FinanceManager {
         String input = scanner.nextLine().trim();
 
         if (input.isEmpty()) {
-            output.println("Category names cannot be empty.");
+            System.out.println("Category names cannot be empty.");
             return;
         }
 
